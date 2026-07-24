@@ -1,3 +1,0 @@
-name: zmk-ruen-compat
-build:
-  cmake: zmk-ruen-compat
