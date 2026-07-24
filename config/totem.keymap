@@ -49,21 +49,21 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             key-positions = <34 35>;
-            bindings = <&kp GLOBE>;
+            bindings = <&kp LG(SPACE)>;
         };
 
         combo_left_thumb_quotes {
             timeout-ms = <45>;
             require-prior-idle-ms = <125>;
             key-positions = <32 33 34>;
-            bindings = <&kp F18>;
+            bindings = <&kp LS(APOS)>;
         };
 
         combo_right_thumb_apostrophe {
             timeout-ms = <45>;
             require-prior-idle-ms = <125>;
             key-positions = <35 36 37>;
-            bindings = <&kp F17>;
+            bindings = <&kp APOS>;
         };
 
         combo_left_bracket {
@@ -214,7 +214,7 @@
                 &kp N1         &kp N2         &kp N3         &kp N4         &kp N5         &kp N6         &kp N7         &kp N8         &kp N9         &kp N0
                 &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI       &kp SKHD(G)    &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp CAPS
                 &kp ESC        &kp SKHD(Z)    &kp SKHD(X)    &kp SKHD(C)    &kp SKHD(V)    &kp SKHD(B)    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP    &kp END        &kp PSCRN      &kp ENTER
-                                                            &trans         &trans         &trans         &kp F13 &trans &kp F14
+                                                            &trans         &trans         &trans         &kp COMMA &trans &kp LS(FSLH)
             >;
         };
 
@@ -222,9 +222,9 @@
             label = "SYM";
             bindings = <
                 &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(N0)
-                &kp BSLH       &kp LS(BSLH)   &kp SEMI       &kp LS(SEMI)   &kp F17 &kp MINUS &kp EQUAL &kp LS(LBKT) &kp LS(RBKT) &kp LS(BSLH)
-                &kp ESC        &kp F18 &kp LS(COMMA) &kp LS(DOT) &kp F13 &kp F14 &kp LS(MINUS) &kp LS(EQUAL) &kp LBKT &kp RBKT &kp BSLH &kp ENTER
-                                                            &kp F16 &trans &kp F15 &trans &trans &kp ENTER
+                &kp BSLH       &kp LS(BSLH)   &kp SEMI       &kp LS(SEMI)   &kp APOS &kp MINUS &kp EQUAL &kp LS(LBKT) &kp LS(RBKT) &kp LS(BSLH)
+                &kp ESC        &kp LS(APOS) &kp LS(COMMA) &kp LS(DOT) &kp COMMA &kp LS(FSLH) &kp LS(MINUS) &kp LS(EQUAL) &kp LBKT &kp RBKT &kp BSLH &kp ENTER
+                                                            &kp FSLH &trans &kp DOT &trans &trans &kp ENTER
             >;
         };
 
