@@ -16,6 +16,16 @@
 #define THUMBS 32 33 34 35 36 37
 
 / {
+    macros {
+        language_toggle: language_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp SPACE>, <&macro_release &kp LGUI>;
+        };
+    };
+
     behaviors {
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -49,7 +59,7 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             key-positions = <34 35>;
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&language_toggle>;
         };
 
         combo_left_thumb_quotes {
@@ -79,7 +89,7 @@
             require-prior-idle-ms = <125>;
             key-positions = <13 14>;
             layers = <BASE>;
-            bindings = <&kp LPAR>;
+            bindings = <&kp LS(N9)>;
         };
 
         combo_left_brace {
@@ -87,7 +97,7 @@
             require-prior-idle-ms = <125>;
             key-positions = <24 25>;
             layers = <BASE>;
-            bindings = <&kp LBRC>;
+            bindings = <&kp LS(LBKT)>;
         };
 
         combo_right_bracket {
@@ -103,7 +113,7 @@
             require-prior-idle-ms = <125>;
             key-positions = <15 16>;
             layers = <BASE>;
-            bindings = <&kp RPAR>;
+            bindings = <&kp LS(N0)>;
         };
 
         combo_right_brace {
@@ -111,7 +121,7 @@
             require-prior-idle-ms = <125>;
             key-positions = <26 27>;
             layers = <BASE>;
-            bindings = <&kp RBRC>;
+            bindings = <&kp LS(RBKT)>;
         };
 
         combo_question {
@@ -119,7 +129,7 @@
             require-prior-idle-ms = <125>;
             key-positions = <27 28>;
             layers = <BASE>;
-            bindings = <&kp QMARK>;
+            bindings = <&kp LS(FSLH)>;
         };
 
         combo_colon {
@@ -127,7 +137,7 @@
             require-prior-idle-ms = <125>;
             key-positions = <6 7>;
             layers = <BASE>;
-            bindings = <&kp COLON>;
+            bindings = <&kp LS(SEMI)>;
         };
 
         combo_semicolon {
@@ -143,15 +153,15 @@
             require-prior-idle-ms = <125>;
             key-positions = <5 15>;
             layers = <BASE>;
-            bindings = <&kp PLUS>;
+            bindings = <&kp LS(EQUAL)>;
         };
 
         combo_star {
             timeout-ms = <45>;
             require-prior-idle-ms = <125>;
-            key-positions = <6 16>;
+            key-positions = <15 6>;
             layers = <BASE>;
-            bindings = <&kp STAR>;
+            bindings = <&kp LS(N8)>;
         };
 
         combo_minus {
@@ -167,7 +177,7 @@
             require-prior-idle-ms = <125>;
             key-positions = <1 2>;
             layers = <BASE>;
-            bindings = <&kp UNDER>;
+            bindings = <&kp LS(MINUS)>;
         };
 
         combo_equal {
@@ -212,7 +222,7 @@
             label = "NUM";
             bindings = <
                 &kp N1         &kp N2         &kp N3         &kp N4         &kp N5         &kp N6         &kp N7         &kp N8         &kp N9         &kp N0
-                &trans         &trans         &trans         &trans         &kp SKHD(G)    &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp CAPS
+                &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI       &kp SKHD(G)    &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp CAPS
                 &kp ESC        &kp SKHD(Z)    &kp SKHD(X)    &kp SKHD(C)    &kp SKHD(V)    &kp SKHD(B)    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP    &kp END        &kp PSCRN      &kp ENTER
                                                             &trans         &trans         &trans         &kp F13 &trans &kp F14
             >;
@@ -221,9 +231,9 @@
         sym {
             label = "SYM";
             bindings = <
-                &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PRCNT      &kp CARET      &kp AMPS       &kp STAR       &kp LPAR       &kp RPAR
-                &kp BSLH       &kp PIPE       &kp SEMI       &kp COLON      &kp F17 &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp PIPE
-                &kp ESC        &kp F18 &kp LESS_THAN &kp GREATER_THAN &kp F13 &kp F14 &kp UNDER &kp PLUS &kp LBKT &kp RBKT &kp BSLH &kp ENTER
+                &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(N0)
+                &kp BSLH       &kp LS(BSLH)   &kp SEMI       &kp LS(SEMI)   &kp F17 &kp MINUS &kp EQUAL &kp LS(LBKT) &kp LS(RBKT) &kp LS(BSLH)
+                &kp ESC        &kp F18 &kp LS(COMMA) &kp LS(DOT) &kp F13 &kp F14 &kp LS(MINUS) &kp LS(EQUAL) &kp LBKT &kp RBKT &kp BSLH &kp ENTER
                                                             &kp F16 &trans &kp F15 &trans &trans &kp ENTER
             >;
         };
