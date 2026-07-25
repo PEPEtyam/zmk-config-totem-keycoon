@@ -49,7 +49,7 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             key-positions = <34 35>;
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&kp GLOBE>;
         };
 
         combo_left_thumb_quotes {
