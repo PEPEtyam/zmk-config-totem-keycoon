@@ -21,5 +21,10 @@
             #binding-cells = <1>;
             bindings = <&ruen_to_en>, <&ruen_to_ru>;
         };
+        ruen_toggle: ruen_toggle {
+            compatible = "zmk,behavior-ruen-toggle";
+            #binding-cells = <0>;
+            bindings = <&ruen_to_en>, <&ruen_to_ru>;
+        };
     };
 };

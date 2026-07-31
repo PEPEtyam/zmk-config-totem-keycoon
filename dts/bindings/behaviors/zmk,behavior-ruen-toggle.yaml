@@ -1,0 +1,10 @@
+description: RuEn lang toggle behavior
+
+compatible: "zmk,behavior-ruen-toggle"
+
+include: zero_param.yaml
+
+properties:
+  bindings:
+    type: phandles
+    required: true
