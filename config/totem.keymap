@@ -61,14 +61,14 @@
             timeout-ms = <45>;
             require-prior-idle-ms = <125>;
             key-positions = <32 33 34>;
-            bindings = <&kp LS(APOS)>;
+            bindings = <&kp APOS>;
         };
 
         combo_right_thumb_apostrophe {
             timeout-ms = <45>;
             require-prior-idle-ms = <125>;
             key-positions = <35 36 37>;
-            bindings = <&kp APOS>;
+            bindings = <&kp LS(APOS)>;
         };
 
         combo_left_bracket {

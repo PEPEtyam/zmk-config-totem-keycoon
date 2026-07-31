@@ -1,0 +1,25 @@
+#include <dt-bindings/zmk/behaviors.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        ruen_key: ruen_key {
+            compatible = "zmk,behavior-ruen-key";
+            #binding-cells = <2>;
+        };
+        ruen_macos: ruen_macos {
+            compatible = "zmk,behavior-ruen-macos";
+            #binding-cells = <1>;
+        };
+        ruen_one_key: ruen_one_key {
+            compatible = "zmk,behavior-ruen-one-key";
+            #binding-cells = <2>;
+            bindings = <&ruen_to_en>, <&ruen_to_ru>;
+        };
+        ruen_switch: ruen_switch {
+            compatible = "zmk,behavior-ruen-switch";
+            #binding-cells = <1>;
+            bindings = <&ruen_to_en>, <&ruen_to_ru>;
+        };
+    };
+};

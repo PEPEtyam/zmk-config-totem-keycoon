@@ -1,0 +1,10 @@
+description: RuEn lang switch behavior
+
+compatible: "zmk,behavior-ruen-switch"
+
+include: one_param.yaml
+
+properties:
+  bindings:
+    type: phandles
+    required: true

@@ -1,0 +1,10 @@
+description: RuEn one-key behavior
+
+compatible: "zmk,behavior-ruen-one-key"
+
+include: two_param.yaml
+
+properties:
+  bindings:
+    type: phandles
+    required: true
