@@ -219,7 +219,7 @@
         sym {
             label = "SYM";
             bindings = <
-                &kp LS(N1)       &kp LS(N2)       &kp LS(N3)       &kp LS(N4)       &kp LS(N5)       &kp N6         &kp N7         &kp N8         &kp N9         &kp N0
+                &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(N4)     &kp LS(N5)     &kp N6         &kp N7         &kp N8         &kp N9         &kp N0
                 &kp GRAVE      &kp LS(BSLH)   &kp LS(COMMA)  &kp LS(DOT)    &kp BSLH       &kp BSLH       &kp LS(COMMA)  &kp LS(BSLH)   &kp LS(DOT)    &kp LS(APOS)
                 &kp ESC        &kp LS(GRAVE)  &kp LS(LBKT)   &kp LS(RBKT)   &kp LBKT       &kp RBKT       &kp LS(N6)     &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(N0)     &kp ENTER
                                                             &trans         &trans         &trans         &trans         &trans         &trans
