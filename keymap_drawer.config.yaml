@@ -1,0 +1,137 @@
+parse_config:
+  raw_binding_map:
+    '&kp LS(N5)': '%'
+    '&kp LS(N6)': ^
+    '&kp LS(RBKT)': '}'
+    '&kp LS(N9)': (
+    '&kp LS(N3)': '#'
+    '&kp LS(APOS)': '"'
+    '&kp LS(N7)': '&'
+    '&kp LS(N1)': '!'
+    '&kp LS(DOT)': '>'
+    '&kp LS(MINUS)': _
+    '&kp LS(LBKT)': '{'
+    '&kp LS(N8)': '*'
+    '&kp LS(BSLH)': '|'
+    '&kp LS(N2)': '@'
+    '&kp LS(COMMA)': <
+    '&kp LS(EQUAL)': +
+    '&kp LS(SEMI)': ':'
+    '&kp LS(N0)': )
+    '&kp LS(GRAVE)': '~'
+    '&kp LS(N4)': $
+    '&kp LG(SPACE)': ⌘Space
+  modifier_fn_map:
+    left_ctrl: ⌃
+    right_ctrl: ⌃
+    left_shift: ⇧
+    right_shift: ⇧
+    left_alt: ⌥
+    right_alt: ⌥
+    left_gui: ⌘
+    right_gui: ⌘
+    keycode_combiner: '{mods}{key}'
+    mod_combiner: '{mod_1}{mod_2}'
+    special_combinations:
+      left_ctrl+left_alt+left_gui: ⌃⌥⌘
+  zmk_keycode_map:
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+    LSHFT: ⇧
+    LCTRL: ⌃
+    LALT: ⌥
+    LGUI: ⌘
+    RGUI: ⌘
+    RALT: ⌥
+    RCTRL: ⌃
+    RSHFT: ⇧
+    ESC: Esc
+    ENTER: Enter
+    SPACE: Space
+    BSPC: Bksp
+    TAB: Tab
+    CAPS: Caps
+    LEFT: ←
+    DOWN: ↓
+    UP: ↑
+    RIGHT: →
+    PAGE DOWN: PgDn
+    PAGE UP: PgUp
+    PSCRN: PrtSc
+    BRI DEC: Bri−
+    BRI INC: Bri+
+    VOLUME DOWN: Vol−
+    VOLUME UP: Vol+
+    PREV: Prev
+    PLAY PAUSE: Play
+    NEXT: Next
+    BT CLR: BT Clr
+    BT CLR ALL: BT Clr All
+draw_config:
+  n_columns: 1
+  key_w: 56
+  key_h: 52
+  inner_pad_w: 2
+  inner_pad_h: 2

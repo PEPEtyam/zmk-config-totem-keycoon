@@ -226,7 +226,7 @@
             >;
         };
 
-        // ADJUST (обе средние клавиши) — Ctrl+Option+Cmd + клавиша для skhd.
+        // ADJUST (обе средние клавиши) — Ctrl+Option+Cmd + клавиша.
         // hjkl на правой руке — стрелки для управления окнами.
         adjust {
             label = "ADJUST";
