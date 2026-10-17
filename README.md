@@ -1,5 +1,7 @@
 # zmk-config-totem-keycoon
 
+[Keymap](#keymap) · [Timings](#timings) · [Combos](#combos) · [Installation](#installation)
+
 ZMK firmware config for the [TOTEM](https://github.com/GEIGEIGEIST/TOTEM) split keyboard (38 keys, wireless, XIAO BLE). Home-row mods, five layers selected with the thumbs, combos for brackets and punctuation, ZMK Studio enabled.
 
 ## Keymap
